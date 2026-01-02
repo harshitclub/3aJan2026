@@ -1,0 +1,42 @@
+.scroll-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  gap: 2rem;
+  animation: scroll-left 120s linear infinite;
+}
+
+.logo-card {
+  flex: 0 0 auto;
+
+  width: 150px;
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: white;
+  border-radius: 8px;
+
+  overflow: hidden; /* IMPORTANT */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo-card img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+/* Infinite scroll animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

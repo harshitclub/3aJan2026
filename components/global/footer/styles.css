@@ -1,0 +1,7 @@
+footer > .footerContainer {
+  gap: 2rem;
+}
+
+footer > .footerContainer > .footerTab {
+  width: calc(100% / 5);
+}
