@@ -1,6 +1,6 @@
 import AboutSection from "@/components/local/pages/homepage/about/About";
 import ClientSection from "@/components/local/pages/homepage/clients/Clients";
-// import CallToAction from "@/components/local/pages/homepage/cta/CallToAction";
+import CallToAction from "@/components/local/pages/homepage/cta/CallToAction";
 import HeroSection from "@/components/local/pages/homepage/hero/Hero";
 import ProgramSection from "@/components/local/pages/homepage/programs/Programs";
 import RightTrainers from "@/components/local/pages/homepage/rightTrainers/RightTrainers";
@@ -21,7 +21,7 @@ export default function Home() {
       <RightTrainers />
       <Score />
       <ThreePsSection />
-      {/* <CallToAction /> */}
+      <CallToAction />
     </main>
   );
 }

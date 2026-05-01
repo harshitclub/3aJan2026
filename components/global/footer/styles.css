@@ -5,3 +5,9 @@ footer > .footerContainer {
 footer > .footerContainer > .footerTab {
   width: calc(100% / 5);
 }
+
+@media screen and (max-width: 480px) {
+  footer {
+    display: none;
+  }
+}

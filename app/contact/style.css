@@ -1,0 +1,42 @@
+.contactPage {
+  background: #e4e4e7;
+  background: linear-gradient(
+    90deg,
+    rgba(228, 228, 231, 0.29) 0%,
+    rgba(244, 244, 245, 0.47) 56%
+  );
+}
+
+.contactPageBox .contactPBoxLeft {
+  width: 40%;
+}
+
+.contactPageBox .contactPBoxRight {
+  width: 55%;
+}
+
+.contactPageBox .contactPBoxRight form {
+  box-shadow: rgba(0, 0, 0, 0.01) 0px 10px 50px;
+}
+
+.contactPageBox .contactPBoxRight form p {
+  width: 40%;
+  color: var(--color-text-body);
+}
+
+.contactPageBox .contactPBoxRight form input,
+textarea {
+  width: 60%;
+}
+
+.contactPageBox .contactPBoxRight form button {
+  background-color: var(--color-corp-blue);
+  color: white;
+  width: 60%;
+  transition: 0.2s all ease-in-out;
+}
+
+.contactPageBox .contactPBoxRight form button:hover {
+  background-color: #1e3ca9e5;
+  color: white;
+}

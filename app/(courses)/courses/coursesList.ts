@@ -9,6 +9,7 @@ export interface Course {
   readonly duration: string;
   readonly mode: CourseMode;
   readonly category: CourseCategory;
+  readonly slug: string;
   readonly link: `/${string}`;
 }
 
@@ -21,6 +22,7 @@ export const coursesList: readonly Course[] = [
     duration: "3 Days",
     mode: "Self-paced / Instructor led",
     category: "Data Analysis",
+    slug: "power-bi",
     link: "/courses/power-bi",
   },
   {
@@ -31,6 +33,7 @@ export const coursesList: readonly Course[] = [
     duration: "3 Days",
     mode: "Self-paced / Instructor led",
     category: "Data Analysis",
+    slug: "advanced-excel",
     link: "/courses/advanced-excel",
   },
   {
@@ -41,6 +44,7 @@ export const coursesList: readonly Course[] = [
     duration: "3 Days",
     mode: "Self-paced / Instructor led",
     category: "Data Analysis",
+    slug: "tableau",
     link: "/courses/tableau",
   },
   {
@@ -51,6 +55,7 @@ export const coursesList: readonly Course[] = [
     duration: "3 Days",
     mode: "Self-paced / Instructor led",
     category: "Data Analysis",
+    slug: "power-platform",
     link: "/courses/power-platform",
   },
   {
@@ -61,6 +66,7 @@ export const coursesList: readonly Course[] = [
     duration: "3 Days",
     mode: "Self-paced / Instructor led",
     category: "Soft Skills",
+    slug: "interpersonal-skills",
     link: "/courses/interpersonal-skills",
   },
   {
@@ -71,6 +77,7 @@ export const coursesList: readonly Course[] = [
     duration: "3 Days",
     mode: "Self-paced / Instructor led",
     category: "Soft Skills",
+    slug: "communication-skills",
     link: "/courses/communication-skills",
   },
 ] as const;

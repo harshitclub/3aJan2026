@@ -7,7 +7,7 @@ import "./styles.css";
 export default function Footer() {
   return (
     <footer className="w-full">
-      <div className="footerHeader grid mx-auto max-w-(--max-width) grid-cols-[1.6fr_1fr_1fr_1fr_1fr] items-start gap-10">
+      <div className="footerHeader grid mx-auto max-w-(--max-width) grid-cols-[1.6fr_1fr_1fr_1fr_1fr] items-start gap-10 py-10">
         {/* Column 1 — Logo */}
         <div>
           <Image
@@ -31,8 +31,6 @@ export default function Footer() {
         <div>
           <h3 className="font-bold text-lg text-gray-800 mb-2">Reach Us at</h3>
           <div className="flex flex-col gap-1 text-gray-700">
-            <span className="block">USA +1 682 297 4830</span>
-            <span className="block">AUS +44 151 453 4009</span>
             <span className="block">IND +91 6364833830</span>
           </div>
         </div>
@@ -43,7 +41,7 @@ export default function Footer() {
         {/* Column 5 — empty (aligns with Company) */}
         <div />
       </div>
-      <div className="footerContainer flex mx-auto items-start justify-between pt-10 pb-10 max-w-(--max-width) border-t border-b border-gray-400 mt-10">
+      <div className="footerContainer flex mx-auto items-start justify-between pt-10 pb-10 max-w-(--max-width) border-t border-b border-gray-400">
         <div className="footerTab flex-[1.6]">
           <p className="text-gray-700 text-justify">
             3a Learning Solutions is a trusted provider of instructor-led
@@ -98,22 +96,22 @@ export default function Footer() {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/">Courses</Link>
+              <Link href="/courses">Courses</Link>
             </li>
             <li>
-              <Link href="/">Corporate</Link>
+              <Link href="/corporate">Corporate</Link>
             </li>
             <li>
-              <Link href="/">Calendar</Link>
+              <Link href="/calendar">Calendar</Link>
             </li>
             <li>
-              <Link href="/">Individual</Link>
+              <Link href="/individual">Individual</Link>
             </li>
             <li>
-              <Link href="/">E-Learning</Link>
+              <Link href="/e-learning">E-Learning</Link>
             </li>
             <li>
-              <Link href="/">Events</Link>
+              <Link href="/events">Events</Link>
             </li>
           </ul>
         </div>
@@ -129,10 +127,10 @@ export default function Footer() {
           </h3>
           <ul className="text-gray-700 flex flex-col gap-2">
             <li>
-              <Link href="/">FAQs</Link>
+              <Link href="/faqs">FAQs</Link>
             </li>
             <li>
-              <Link href="/">Sitemap</Link>
+              <Link href="/sitemap.xml">Sitemap</Link>
             </li>
           </ul>
         </div>
@@ -141,9 +139,6 @@ export default function Footer() {
           <ul className="text-gray-700 flex flex-col gap-2">
             <li>
               <Link href="/">About</Link>
-            </li>
-            <li>
-              <Link href="/">Programs</Link>
             </li>
             <li>
               <Link href="/">Join Us</Link>
@@ -157,12 +152,13 @@ export default function Footer() {
       <div className="footerDown flex mx-auto items-center justify-between py-4 max-w-(--max-width)">
         <div>
           <p className="text-gray-700">
-            © 2014-2026 3a Learning Solutions. All rights reserved.
+            © 2014-{new Date().getFullYear()} 3a Learning Solutions. All rights
+            reserved.
           </p>
         </div>
         <div className="flex gap-5 text-gray-700">
-          <Link href="/">Privacy Policy</Link> |{" "}
-          <Link href="/">Terms and Conditions</Link>
+          <Link href="/privacy-and-policy">Privacy Policy</Link> |{" "}
+          <Link href="/terms-and-conditions">Terms and Conditions</Link>
         </div>
       </div>
     </footer>

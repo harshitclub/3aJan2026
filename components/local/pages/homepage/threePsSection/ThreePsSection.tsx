@@ -1,5 +1,4 @@
 import SecondaryButton from "@/components/local/buttons/SecondaryBtn";
-import Link from "next/link";
 
 export default function ThreePsSection() {
   return (

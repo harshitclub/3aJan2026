@@ -1,0 +1,19 @@
+.cHeader {
+  background: #e4e4e7;
+  background: linear-gradient(
+    90deg,
+    rgba(228, 228, 231, 0.29) 0%,
+    rgba(244, 244, 245, 0.47) 56%
+  );
+}
+
+.cHeaderHead {
+  background-color: var(--color-corp-blue);
+}
+
+.cHHLeft {
+  width: 50%;
+}
+.cHHRight {
+  width: 40%;
+}

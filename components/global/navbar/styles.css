@@ -38,9 +38,61 @@ header > nav > ul > li > ul {
   transition: opacity 0.2s ease;
 }
 
+.desktopHide {
+  display: none;
+}
+
 /* Show submenu on hover of parent */
 header > nav > ul > li:hover > ul {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .desktopHide {
+    display: block;
+  }
+  .mobileHide {
+    display: none;
+  }
+  header > nav {
+    position: relative;
+  }
+
+  header > nav > .mainLogo {
+    margin-left: 1rem;
+  }
+
+  header > nav > .menu {
+    background: rgba(255, 255, 255, 255);
+    left: -100%;
+    top: 0;
+    height: 100vh;
+    position: fixed;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+    width: 85%;
+    transition: 0.3s all ease-in-out;
+  }
+  header > nav > .menu > li {
+    border-bottom: 1px solid gray;
+    width: 100%;
+    padding: 0 0 1rem 0;
+  }
+  .navActive {
+    left: 0 !important;
+  }
+  .navToggleBtnBox {
+    margin-right: 1rem;
+  }
+  .navToggleBtnBox .navToggleBtn {
+    font-size: 2rem;
+  }
+  .mNavCopyRight {
+    border: none !important;
+  }
 }

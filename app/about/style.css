@@ -1,0 +1,28 @@
+.aboutPageHeader {
+  background:
+    linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),
+    url(../../public/media/about/header.png);
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.aboutHLeft {
+  width: 48%;
+}
+.aboutHRight {
+  width: 48%;
+}
+
+@media screen and (max-width: 480px) {
+  .aboutPageHeader {
+    height: 30vh;
+  }
+  .aboutHLeft {
+    width: 100%;
+  }
+  .aboutHRight {
+    width: 100%;
+  }
+}
